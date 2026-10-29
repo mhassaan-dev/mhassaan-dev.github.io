@@ -47,8 +47,8 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background-color .3s, color .3s;
-  overflow-x: hidden;
 }
+html { overflow-x: hidden; }
 main { overflow-x: clip; } /* stops slide-in animations from widening the page on phones */
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-2); }
