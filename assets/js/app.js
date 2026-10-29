@@ -55,7 +55,7 @@
 
   // Typing effect
   const typed = document.getElementById("typed");
-  const words = ["Full-Stack .NET Developer", "SaaS Builder", "Manager IT (Software)", "Freelance Software Engineer"];
+  const words = ["Full-Stack .NET Developer", "SaaS Builder", "Manager IT / Lead Developer", "Freelance Software Engineer"];
   let w = 0, c = 0, deleting = false;
   function tick() {
     const word = words[w];
