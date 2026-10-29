@@ -49,6 +49,7 @@ body {
   transition: background-color .3s, color .3s;
   overflow-x: hidden;
 }
+main { overflow-x: clip; } /* stops slide-in animations from widening the page on phones */
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-2); }
 h1, h2, h3, h4 { color: var(--text); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
