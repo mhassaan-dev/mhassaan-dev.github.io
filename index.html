@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hassaan | Full-Stack .NET Developer & Freelancer</title>
+  <meta name="description" content="Muhammad Hassaan is a full-stack .NET developer in Karachi with 4+ years of experience building secure web apps, SaaS products, APIs and dashboards with ASP.NET Core, React and SQL Server. Available for freelance work.">
+  <meta name="keywords" content="Muhammad Hassaan, Full Stack Developer, .NET Developer, Freelance Developer, ASP.NET Core, C#, React, SQL Server, SaaS, Karachi, Pakistan">
+  <meta name="author" content="Muhammad Hassaan">
+  <meta name="theme-color" content="#3b6cff">
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Hassaan | Full-Stack .NET Developer">
+  <meta property="og:description" content="I build secure, data-driven web applications for businesses. Available for freelance projects.">
+  <meta property="og:image" content="assets/img/profile/profile.jpg">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Set theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) { }
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="brand"><span class="brand-mark">MH</span><span>Hassaan<span class="grad-text">.</span></span></a>
+
+      <nav class="nav">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+        <a href="#contact" class="btn-x primary sm">Hire Me</a>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-grid"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="status-pill"><span class="pulse"></span> Available for freelance projects</div>
+            <h1>Hi, I'm <span class="grad-text">Muhammad Hassaan</span></h1>
+            <div class="typed-line"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret"></span></div>
+            <p class="lead">I build secure, data-driven web applications that replace spreadsheets and manual work with fast,
+              reliable software. From government health programmes and insurance platforms to my own rent management SaaS.</p>
+            <div class="hero-ctas">
+              <a href="#contact" class="btn-x primary"><i class="bi bi-chat-dots"></i> Start a Project</a>
+              <a href="#projects" class="btn-x ghost"><i class="bi bi-grid"></i> View Work</a>
+              <a href="assets/cv/Muhammad-Hassaan-CV.pdf" class="btn-x ghost" download><i class="bi bi-download"></i> Download CV</a>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong class="grad-text" data-count="4" data-suffix="+">4+</strong><span>Years experience</span></div>
+              <div class="stat"><strong class="grad-text" data-count="20" data-suffix="+">20+</strong><span>Projects delivered</span></div>
+              <div class="stat"><strong class="grad-text" data-count="3">3</strong><span>Industries served</span></div>
+              <div class="stat"><strong class="grad-text" data-count="1">1</strong><span>Live SaaS product</span></div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="code-card">
+                <div class="code-bar"><b></b><b></b><b></b><span>Developer.cs</span></div>
+<pre class="code"><code><span class="ln"><span class="k">public class</span> <span class="t">Developer</span></span>
+<span class="ln">{</span>
+<span class="ln">    <span class="k">public string</span> Name =&gt; <span class="s">"Muhammad Hassaan"</span>;</span>
+<span class="ln">    <span class="k">public string</span> Role =&gt; <span class="s">"Full-Stack .NET Dev"</span>;</span>
+<span class="ln">    <span class="k">public string</span>[] Stack =&gt;</span>
+<span class="ln">        [<span class="s">".NET 8"</span>, <span class="s">"React"</span>, <span class="s">"SQL Server"</span>];</span>
+<span class="ln">    <span class="k">public int</span> Experience =&gt; <span class="n">4</span>; <span class="c">// years</span></span>
+<span class="ln">    <span class="k">public bool</span> OpenToWork =&gt; <span class="k">true</span>;</span>
+<span class="ln"></span>
+<span class="ln">    <span class="k">public</span> <span class="t">App</span> <span class="f">Build</span>(<span class="t">Idea</span> idea)</span>
+<span class="ln">        =&gt; <span class="k">new</span> <span class="t">SecureApp</span>(idea).<span class="f">Ship</span>();</span>
+<span class="ln">}</span></code></pre>
+              </div>
+              <div class="float-chip chip-1"><i class="bi bi-code-slash"></i>
+                <div>.NET 8 + React<small>Full-stack</small></div>
+              </div>
+              <div class="float-chip chip-2"><i class="bi bi-shield-check"></i>
+                <div>Secure by design<small>RBAC · JWT</small></div>
+              </div>
+              <div class="float-chip chip-3"><i class="bi bi-database"></i>
+                <div>SQL Server<small>Data &amp; reports</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>C#</span><span>.NET 8</span><span>ASP.NET Core</span><span>Web API</span><span>React</span><span>SQL Server</span>
+        <span>Entity Framework</span><span>JWT Auth</span><span>jQuery</span><span>Bootstrap</span><span>Cloud Hosting</span><span>xUnit</span>
+        <span>C#</span><span>.NET 8</span><span>ASP.NET Core</span><span>Web API</span><span>React</span><span>SQL Server</span>
+        <span>Entity Framework</span><span>JWT Auth</span><span>jQuery</span><span>Bootstrap</span><span>Cloud Hosting</span><span>xUnit</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 about-text" data-aos="fade-right">
+            <span class="eyebrow">// about me</span>
+            <div class="about-id">
+              <img src="assets/img/profile/profile.jpg" alt="Muhammad Hassaan">
+              <div><strong>Muhammad Hassaan</strong><span>Full-Stack .NET Developer · Karachi</span></div>
+            </div>
+            <h3>I turn messy business processes into clean, working software.</h3>
+            <p>I'm a full-stack developer from Karachi, currently <strong>Manager IT (Software)</strong> at PPHI Sindh.
+              Over the last 4+ years I've built systems for healthcare, insurance and ERP, covering everything from
+              payment reconciliation and fraud detection to role-based access, bulk data import and financial reporting.</p>
+            <p>I handle a project end to end: understanding the requirement, designing the database, building the
+              backend and UI, deploying to the cloud and supporting it after launch. I keep the code clean and simple so
+              it's easy to maintain long after I hand it over.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="info-grid">
+              <div class="info card-x"><i class="bi bi-person-badge"></i>
+                <div><small>Current role</small><span>Manager IT (Software)</span></div>
+              </div>
+              <div class="info card-x"><i class="bi bi-geo-alt"></i>
+                <div><small>Location</small><span>Karachi, Pakistan</span></div>
+              </div>
+              <div class="info card-x"><i class="bi bi-envelope"></i>
+                <div><small>Email</small><span><a href="mailto:mhassaanarain404@gmail.com">mhassaanarain404@gmail.com</a></span></div>
+              </div>
+              <div class="info card-x"><i class="bi bi-telephone"></i>
+                <div><small>Phone</small><span><a href="tel:+923470377136">+92 347 0377136</a></span></div>
+              </div>
+              <div class="info card-x"><i class="bi bi-translate"></i>
+                <div><small>Languages</small><span>English, Urdu</span></div>
+              </div>
+              <div class="info card-x"><i class="bi bi-briefcase"></i>
+                <div><small>Freelance</small><span>Available</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-alt">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// tech stack</span>
+          <h2>Skills &amp; tools</h2>
+          <p>The technologies I use every day to design, build, secure and ship applications.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-hdd-stack"></i><h3>Backend</h3></div>
+              <ul class="tags"><li>C#</li><li>.NET 8</li><li>ASP.NET Core</li><li>ASP.NET MVC</li><li>Web API</li><li>Entity Framework</li><li>LINQ</li><li>ADO.NET</li><li>VB.NET</li><li>Web Forms</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-window-sidebar"></i><h3>Frontend</h3></div>
+              <ul class="tags"><li>React</li><li>Vite</li><li>JavaScript</li><li>jQuery</li><li>AJAX</li><li>AngularJS</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Charts &amp; Data Tables</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-database"></i><h3>Database</h3></div>
+              <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>Stored Procedures</li><li>Functions</li><li>Migrations</li><li>PL/SQL</li><li>Firebase</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-cloud-check"></i><h3>Cloud &amp; Deployment</h3></div>
+              <ul class="tags"><li>Cloud Hosting</li><li>IIS</li><li>Netlify</li><li>Cloud SQL Databases</li><li>HTTPS &amp; SSL</li><li>CORS Setup</li><li>Environment Config</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-shield-lock"></i><h3>Security</h3></div>
+              <ul class="tags"><li>RBAC</li><li>JWT &amp; Refresh Tokens</li><li>Page &amp; Action Permissions</li><li>Login Throttling</li><li>Security Headers</li><li>Data Validation</li></ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-x hover skill-card">
+              <div class="head"><i class="bi bi-tools"></i><h3>Testing &amp; Tools</h3></div>
+              <ul class="tags"><li>xUnit</li><li>Vitest</li><li>API Testing</li><li>Git</li><li>Visual Studio</li><li>Crystal Reports</li><li>RPA in C#</li><li>SAP ABAP</li><li>Agile / SDLC</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// what I offer</span>
+          <h2>Freelance services</h2>
+          <p>From a first prototype to a fully working product, plus support after launch.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card-x hover service"><span class="num">01</span><i class="bi bi-window-stack"></i>
+              <h3>Custom Web Applications</h3>
+              <p>Business portals and internal systems with login, user roles, dashboards and reports, built around how your team actually works.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-x hover service"><span class="num">02</span><i class="bi bi-rocket-takeoff"></i>
+              <h3>SaaS Product Development</h3>
+              <p>Multi-client SaaS apps with a separate database per client and secure login, deployed to the cloud and ready for customers.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-x hover service"><span class="num">03</span><i class="bi bi-plug"></i>
+              <h3>APIs &amp; Integrations</h3>
+              <p>REST APIs in .NET that connect your apps, databases and third-party services, secured with tokens.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card-x hover service"><span class="num">04</span><i class="bi bi-diagram-3"></i>
+              <h3>Database Design</h3>
+              <p>SQL Server databases, stored procedures and data validation, including bulk file upload and data reconciliation.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-x hover service"><span class="num">05</span><i class="bi bi-bar-chart-line"></i>
+              <h3>Dashboards &amp; Reports</h3>
+              <p>KPI dashboards and financial reports that give management clear numbers instead of manual spreadsheets.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-x hover service"><span class="num">06</span><i class="bi bi-wrench-adjustable"></i>
+              <h3>Upgrades &amp; Maintenance</h3>
+              <p>Fixing bugs, speeding up slow systems and upgrading old ASP.NET apps to modern .NET, even if someone else built them.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="card-x step" data-aos="fade-up">
+            <h4>Discuss</h4>
+            <p>We talk about your problem, users and goals.</p>
+          </div>
+          <div class="card-x step" data-aos="fade-up" data-aos-delay="100">
+            <h4>Plan</h4>
+            <p>You get a clear scope, timeline and cost estimate.</p>
+          </div>
+          <div class="card-x step" data-aos="fade-up" data-aos-delay="200">
+            <h4>Build</h4>
+            <p>Regular updates so you always see progress.</p>
+          </div>
+          <div class="card-x step" data-aos="fade-up" data-aos-delay="300">
+            <h4>Launch &amp; Support</h4>
+            <p>Deployed live, with support after delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// selected work</span>
+          <h2>Featured projects</h2>
+          <p>Real systems I've designed and built for businesses and government programmes.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- TRL -->
+          <div class="col-12" data-aos="fade-up">
+            <div class="card-x hover project featured">
+              <div class="row g-0 h-100">
+                <div class="col-lg-5">
+                  <div class="mock">
+                    <div class="mock-bar"><b></b><b></b><b></b><span>the-ledger / dashboard</span></div>
+                    <div class="mock-body">
+                      <div class="mock-side"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="mock-main">
+                        <div class="mock-kpis"><i></i><i></i><i></i></div>
+                        <div class="mock-chart"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:65%"></i><i style="height:95%"></i><i style="height:78%"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="project-body">
+                    <div class="project-meta"><span class="badge-x live">● Live</span><span class="badge-x">SaaS</span><span class="where">Own product · 2026</span></div>
+                    <h3>The Ledger (TRL): Rent &amp; Lease Management</h3>
+                    <p>A multi-client SaaS for building owners to manage buildings, units, tenants and leases, with
+                      rent invoicing, payments and move-out settlements.</p>
+                    <ul class="highlights">
+                      <li>Prorated rent, late fees, security deposits, receipts and move-out settlements</li>
+                      <li>6 financial reports (arrears ageing, rent roll, collections and more) plus a KPI dashboard</li>
+                      <li>Separate database per client, JWT with refresh tokens, page and action-level permissions</li>
+                      <li>Login throttling, security headers, and optimised for slow internet connections</li>
+                    </ul>
+                    <ul class="tags"><li>React (Vite)</li><li>.NET 8 Web API</li><li>C#</li><li>SQL Server</li><li>Entity Framework</li><li>xUnit</li><li>Vitest</li></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CCT Mamta -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card-x hover project">
+              <div class="mock">
+                <div class="mock-bar"><b></b><b></b><b></b><span>cct-mamta / reconciliation</span></div>
+                <div class="mock-body">
+                  <div class="mock-side"><i></i><i></i><i></i><i></i></div>
+                  <div class="mock-main">
+                    <div class="mock-kpis"><i></i><i></i><i></i></div>
+                    <div class="mock-chart"><i style="height:80%"></i><i style="height:60%"></i><i style="height:90%"></i><i style="height:40%"></i><i style="height:70%"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span class="badge-x">Gov. Health</span><span class="where">PPHI Sindh · 2026</span></div>
+                <h3>CCT Mamta: Payment Reconciliation</h3>
+                <p>Makes sure a Government of Sindh maternal health allowance reaches real patients, not ineligible people.</p>
+                <ul class="highlights">
+                  <li>Matches payment records against verified patient visits</li>
+                  <li>Caught wrong entries, such as relatives entered as patients</li>
+                  <li>Bulk upload with staging tables and validation</li>
+                </ul>
+                <ul class="tags"><li>ASP.NET MVC</li><li>SQL Server</li><li>Bootstrap</li></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insurance -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-x hover project">
+              <div class="mock">
+                <div class="mock-bar"><b></b><b></b><b></b><span>insurance / policies</span></div>
+                <div class="mock-body">
+                  <div class="mock-side"><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="mock-main">
+                    <div class="mock-kpis"><i></i><i></i><i></i></div>
+                    <div class="mock-chart"><i style="height:50%"></i><i style="height:75%"></i><i style="height:60%"></i><i style="height:88%"></i><i style="height:72%"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span class="badge-x">Insurance</span><span class="where">Salaam Takaful</span></div>
+                <h3>Insurance Management System</h3>
+                <p>Manages multiple companies, each offering crop and other insurance policies.</p>
+                <ul class="highlights">
+                  <li>Company, crop insurance and policy setup</li>
+                  <li>Role-based access with token authentication</li>
+                  <li>Reporting for management</li>
+                </ul>
+                <ul class="tags"><li>ASP.NET Core MVC</li><li>Web API</li><li>EF</li><li>SQL Server</li></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Approval Workflow -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-x hover project">
+              <div class="mock">
+                <div class="mock-bar"><b></b><b></b><b></b><span>approvals / requests</span></div>
+                <div class="mock-body">
+                  <div class="mock-side"><i></i><i></i><i></i></div>
+                  <div class="mock-main">
+                    <div class="mock-kpis"><i></i><i></i><i></i></div>
+                    <div class="mock-chart"><i style="height:35%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:95%"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span class="badge-x">Workflow</span><span class="where">Salaam Takaful</span></div>
+                <h3>Approval Workflow System</h3>
+                <p>Requests move through multiple approvers until final approval or rejection.</p>
+                <ul class="highlights">
+                  <li>Multi-level approval flow</li>
+                  <li>Comments and file attachments on each request</li>
+                  <li>Clear final approve or reject outcome</li>
+                </ul>
+                <ul class="tags"><li>ASP.NET MVC</li><li>jQuery</li><li>AJAX</li><li>SQL Server</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// career</span>
+          <h2>Experience &amp; education</h2>
+          <p>My professional journey in software development.</p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <div class="timeline">
+              <div class="card-x t-item current" data-aos="fade-up">
+                <div class="t-head">
+                  <h4>Manager IT (Software)</h4><span class="t-date">Jun 2026 – Present</span>
+                </div>
+                <div class="t-org">People's Primary Healthcare Initiative (PPHI) Sindh</div>
+                <p>Design, develop and maintain web applications for PPHI Sindh's health programmes, including user rights,
+                  dashboards, bulk data upload and validation. Gather requirements from programme teams, then test,
+                  deploy and support the applications.</p>
+              </div>
+
+              <div class="card-x t-item" data-aos="fade-up">
+                <div class="t-head">
+                  <h4>Salaam Takaful Limited</h4><span class="t-date">Sep 2023 – Jun 2026</span>
+                </div>
+                <div class="t-roles">
+                  <div class="t-role">
+                    <h5>Senior Software Developer <span>Jan 2025 – Jun 2026</span></h5>
+                    <p>Led front-end and back-end development across multiple web applications, including the Insurance
+                      Management System. Owned the full SDLC and improved security and performance.</p>
+                  </div>
+                  <div class="t-role">
+                    <h5>Software Developer <span>Sep 2023 – Dec 2024</span></h5>
+                    <p>Built and maintained ASP.NET applications, designed SQL Server and PL/SQL databases, integrated
+                      third-party APIs and improved ERP functionality.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-x t-item" data-aos="fade-up">
+                <div class="t-head">
+                  <h4>Jr. Software Engineer</h4><span class="t-date">Mar 2023 – Aug 2023</span>
+                </div>
+                <div class="t-org">EfroTech Services</div>
+                <p>Upgraded existing products to ASP.NET Core, improved ERP functionality and performance, and resolved
+                  client requests.</p>
+              </div>
+
+              <div class="card-x t-item" data-aos="fade-up">
+                <div class="t-head">
+                  <h4>ASP.NET Intern</h4><span class="t-date">Dec 2021 – Mar 2022</span>
+                </div>
+                <div class="t-org">Awesome Technology Inc.</div>
+                <p>Built front-end and back-end features for public and internal websites, and did QA testing to find
+                  defects and improve usability.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="card-x side-card">
+              <h3><i class="bi bi-mortarboard"></i> Education</h3>
+              <div class="entry"><strong>BS Computer Science</strong><span>PAF KIET University, Karachi</span></div>
+            </div>
+            <div class="card-x side-card">
+              <h3><i class="bi bi-patch-check"></i> Certification</h3>
+              <div class="entry"><strong>SAP ABAP Training</strong><span>Excellence Delivered (EXD) · Mar – Sep 2022</span></div>
+            </div>
+            <div class="card-x side-card">
+              <h3><i class="bi bi-file-earmark-person"></i> Full CV</h3>
+              <p style="font-size:14.5px">All details in one PDF.</p>
+              <a href="assets/cv/Muhammad-Hassaan-CV.pdf" class="btn-x primary sm" download><i class="bi bi-download"></i> Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-alt">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// faq</span>
+          <h2>Frequently asked questions</h2>
+          <p>Quick answers before we start working together.</p>
+        </div>
+        <div class="faq" data-aos="fade-up">
+          <details open>
+            <summary>What technologies do you work with?</summary>
+            <p>Mainly C#, .NET 8, ASP.NET Core / MVC and Web API on the backend, React or jQuery on the frontend, and SQL
+              Server for databases. I also deploy apps to cloud hosting.</p>
+          </details>
+          <details>
+            <summary>How long does a typical project take?</summary>
+            <p>It depends on scope. A small internal tool might take one to two weeks, while a full web application with
+              multiple modules can take four to eight weeks. I give a realistic timeline after understanding the
+              requirements.</p>
+          </details>
+          <details>
+            <summary>Do you work with existing codebases?</summary>
+            <p>Yes. I regularly take over projects built by other developers, fix bugs and add features without
+              rewriting everything unless it's really needed.</p>
+          </details>
+          <details>
+            <summary>Can you handle both frontend and backend?</summary>
+            <p>Yes. I can build the database, backend and user interface, or focus on just one part if that's what you
+              need.</p>
+          </details>
+          <details>
+            <summary>Do you offer support after delivery?</summary>
+            <p>Yes. There's a support window after launch to fix any issues, and ongoing maintenance is available
+              afterwards.</p>
+          </details>
+          <details>
+            <summary>How do we get started?</summary>
+            <p>Send a message through the form below with a short description of what you need. I'll reply with any
+              questions, then share a timeline and cost estimate.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">// contact</span>
+          <h2>Let's build something together</h2>
+          <p>Have a project in mind, or something that needs fixing? Send me a message.</p>
+        </div>
+
+        <div class="card-x contact-box" data-aos="fade-up">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="contact-side">
+                <h3>Get in touch</h3>
+                <p>Tell me about your idea and I'll give you honest feedback, a timeline and a cost estimate.</p>
+                <a class="contact-line" href="mailto:mhassaanarain404@gmail.com"><i class="bi bi-envelope"></i> mhassaanarain404@gmail.com</a>
+                <a class="contact-line" href="https://wa.me/923470377136" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> +92 347 0377136</a>
+                <a class="contact-line" href="https://linkedin.com/in/muhammad-hassaan-258b1320a" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn profile</a>
+                <div class="contact-line"><i class="bi bi-geo-alt"></i> Karachi, Pakistan</div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form id="contactForm" class="contact-form" action="https://formspree.io/f/xppzobng" method="post">
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <div class="row">
+                  <div class="col-md-6 field">
+                    <label for="name">Your name</label>
+                    <input id="name" type="text" name="name" required>
+                  </div>
+                  <div class="col-md-6 field">
+                    <label for="email">Your email</label>
+                    <input id="email" type="email" name="email" required>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" type="text" name="subject" required>
+                </div>
+                <div class="field">
+                  <label for="message">Project details</label>
+                  <textarea id="message" name="message" rows="5" placeholder="What do you need built or fixed?" required></textarea>
+                </div>
+                <button type="submit" class="btn-x primary"><i class="bi bi-send"></i> Send Message</button>
+                <div id="formStatus" class="form-status" role="status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Muhammad Hassaan. All rights reserved.</p>
+      <div class="socials">
+        <a class="icon-btn" href="https://linkedin.com/in/muhammad-hassaan-258b1320a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a class="icon-btn" href="https://wa.me/923470377136" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a class="icon-btn" href="mailto:mhassaanarain404@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="icon-btn to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
