@@ -412,3 +412,4 @@ section { padding: 110px 0; position: relative; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+.project-links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
