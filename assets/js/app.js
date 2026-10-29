@@ -103,7 +103,7 @@
         status.className = "form-status ok";
       })
       .catch(function () {
-        status.textContent = "Something went wrong. Please email me directly at mhassaanarain404@gmail.com.";
+        status.textContent = "Something went wrong. Please email me directly at hello.mhassaan@gmail.com.";
         status.className = "form-status err";
       })
       .finally(function () {
